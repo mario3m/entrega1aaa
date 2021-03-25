@@ -1,12 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-  <title></title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title>La Aceitera</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css" media="all">
 </head>
 
 <body>
 
-<div id="contenido">
+  <div id="contenido">
 
 
 <!--
@@ -16,10 +17,10 @@
 -->
 
 
-  <p class="i" id="logo">
+<p class="i" id="logo">
   <span id="La">La</span>
-	<span id="aceitera">Aceitera</span> 
-	<span id="lema"><br>Tu tienda de aceite en Internet</span>
+  <span id="aceitera">Aceitera</span> 
+  <span id="lema"><br>Tu tienda de aceite en Internet</span>
 </p>
 
 
@@ -35,35 +36,38 @@
 
 <div id="articulos">
 
-  <p class="t2">Artículos en la cesta</p>
-	
+  <h2 class="t2">Artículos en la cesta</h2>
+
   <table id="tabla_compra">
-  <tbody><tr id="conceptos">
-    <td><b>Producto</b></td>
-  	<td><b>PVP</b></td>
-    <td><b>Uds.</b></td>
-    <td><b>Eur.</b></td></tr>
-  <tr>
-    <td><b>Botella Oleum 500 ml</b> (en caja de 12 unidades)</td>    <td>45 €</td>    <td>2</td>    <td>90 €</td>
-  </tr>
-  <tr>	
-  	    <td><b>Aceitera de cristal Fenicia 500 ml</b></td>
-    <td>100 €</td>
-    <td>1</td>
-    <td>100 €</td>
-  </tr>
-  <tr>	
-  	<td><b>Garrafa Pet 5 litros</b>(en caja de 3 unidades)</td>    <td>52,97 €</td>    <td>1</td>    <td>52,97€</td>
-  </tr>
-  <tr id="total">	
-  	<td colspan="3" align="right"><b>Precio Total</b></td>
-        <td>242,97 €</td>
-  </tr>
-  </tbody></table>
-	
-	<p id="info_en">Non european customers can request a VAT refund</p>
-	
-</div>
+    <caption>Tabla de especificación de productos de la cesta</caption>
+    <thead><tr id="conceptos">
+      <th><em>Producto</em></th>
+      <th><em><acronym title="Precio de Venta al Público">PVP</acronym></em></th>
+      <th><em><abbr title="Unidades">Uds</abbr>.</em></th>
+      <th><em><abbr title="Euros">Eur</abbr>.</em></th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>Botella Oleum 500 ml</em> (en caja de 12 unidades)</td>    <td>45 €</td>    <td>2</td>    <td>90 €</td>
+      </tr>
+      <tr>  
+       <td><em>Aceitera de cristal Fenicia 500 ml</em></td>
+       <td>100 €</td>
+       <td>1</td>
+       <td>100 €</td>
+     </tr>
+     <tr> 
+       <td><em>Garrafa Pet 5 litros</em>(en caja de 3 unidades)</td>    <td>52,97 €</td>    <td>1</td>    <td>52,97€</td>
+     </tr>
+     <tr id="total">  
+       <td colspan="3" align="right"><em>Precio Total</em></td>
+       <td>242,97 €</td>
+     </tr>
+   </tbody></table>
+
+   <p id="info_en">Non european customers can request a VAT refund</p>
+
+ </div>
 
 
 <!--
@@ -75,77 +79,77 @@
 
 <div id="datos">
 
-  <p class="t2">Datos de facturación</p>
+  <h2 class="t2">Datos de facturación</h2>
 
-  <p class="info"><span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
+  <p class="info"><span class="i">i</span> Los campos marcados en rojo e identificados como (*) son obligatorios.</p>
 
   <form action="#">
 
-    <div id="datos_personales">
-	    <p class="t3">Datos personales</p>
+    <fieldset id="datos_personales">
+      <legend class="t3">Datos personales</legend>
       <div class="campo_form">
-        <label>Empresa </label>
+        <label for="empresa">Empresa </label>
         <input id="empresa" name="empresa" type="text">
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Nombre </label>
+        <label for="nombre" class="obligatorio">Nombre (*) </label>
         <input id="nombre" name="nombre" type="text">
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Apellidos </label>
+        <label for="apellidos" class="obligatorio">Apellidos (*) </label>
         <input id="apellidos" name="apellidos" type="text">
       </div>
-    <div class="campo_form">
-        <label class="obligatorio">e-mail </label>
+      <div class="campo_form">
+        <label for="email" class="obligatorio">e-mail (*) </label>
         <input id="email" name="email" type="text">
       </div>
-     <div class="campo_form">
-        <label class="obligatorio">Tlf. de contacto </label>
+      <div class="campo_form">
+        <label for="tlf" class="obligatorio"><abbr title="Teléfono">Tlf.</abbr> de contacto (*) </label>
         <input id="tlf" name="tlf" type="text">
       </div>
       <div class="campo_form">
-        <label>NIF/CIF </label>
+        <label for="nif"><acronym title="Número de Identificación Fiscal">NIF</acronym>/<acronym title="Código de Identificación Fiscal">CIF</acronym> </label>
         <input id="nif" name="nif" type="text">
       </div>
-    </div>	
+    </fieldset> 
 
-    <div id="datos_envio">
-      <p class="t3">Datos de envío</p>
-    	<div class="campo_form">
-        <label class="obligatorio">Dirección </label>
+    <fieldset id="datos_envio">
+      <legend class="t3">Datos de Envío</legend>
+      <div class="campo_form">
+        <label for="dir" class="obligatorio">Dirección (*) </label>
         <input id="dir" name="dir" type="text">
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Localidad </label>
+        <label for="localidad" class="obligatorio">Localidad (*) </label>
         <input id="localidad" name="localidad" type="text">
       </div>
-    	<div class="campo_form">
-        <label class="obligatorio">Provincia </label>
+      <div class="campo_form">
+        <label for="provincia" class="obligatorio">Provincia (*) </label>
         <input id="provincia" name="provincia" type="text">
       </div>
-    	<div class="campo_form">
-        <label class="obligatorio">CP </label>
+      <div class="campo_form">
+        <label for="cp" class="obligatorio"><acronym title="Código Postal">CP</acronym> (*) </label>
         <input id="cp" name="cp" type="text">
       </div>
       <div class="campo_form">
-       <label>Horario de entrega </label>
-       <select name="horario">    
-        	<option selected="selected" value="all">Todo el día</option>    
-        	<option value="a">De 9:00 a 14:00 horas</option>      
-        	<option value="b">De 14:00 a 19:00 horas</option>      
-        </select>
+       <label for="horario">Horario de entrega </label>
+       <select name="horario" id="horario">    
+         <option selected="selected" value="all">Todo el día</option>    
+         <option value="a">De 9:00 a 14:00 horas</option>      
+         <option value="b">De 14:00 a 19:00 horas</option>      
+       </select>
      </div>
-    </div>
+   </fieldset>
 
-    <div id="observaciones">
-      <label>Observaciones:</label><br>
-      <textarea rows="6" cols="80" id="obs" name="obs">      </textarea>
-    </div>
+   <div id="observaciones">
+    <label for="obs">Observaciones:</label><br>
+    <textarea rows="6" cols="80" id="obs" name="obs">      </textarea>
+  </div>
 
-    <p id="submit">
-      <input value="Realizar Pedido" type="submit">
-    </p>
-  </form>
+  <p id="submit">
+    <input value="Realizar Pedido" type="submit">
+  </p>
+</form>
 
 </div>
 
@@ -159,90 +163,90 @@
 
 <div id="garantias">
 
-  <p class="t2">Garantías</p>
+  <h2 class="t2">Garantías</h2>
 
-  <p class="t3">Devolución o anulación de pedido</p>
+  <h3 class="t3">Devolución o anulación de pedido</h3>
 
-    <p>Puedes devolver un producto o pedido que por algún motivo no satisface 
-      tus expectativas.</p>
-    <p>Plazo de tramitación: Dispones de 10 días hábiles 
-      para gestionar la devolución de un producto o pedido desde que su 
-      estado es Entregado en Mi Cuenta.</p>
-    <p>Estado del pedido: Desde que te llega hasta que aparece en la web como 
-      Entregado pueden pasar hasta 48 horas, puesto que es el tiempo que transcurre 
-      desde que el operador logístico realiza la entrega hasta que nos 
-      lo comunica y lo actualizamos en nuestra base de datos. Así, si tu 
-      pedido no aparece en la lista del apartado Devoluciones, te aconsejamos 
-      que lo vuelvas a intentar pasado este plazo.</p>
-    <p>Condiciones del paquete: El producto debe estar en perfecto estado, con 
-      el embalaje y etiquetado original y en la misma caja o sobre que te hemos 
-      enviado, o en su defecto en algún formato similar que garantice la 
-      devolución en perfecto estado.</p>
-    <p>Albarán: Debes incluir una copia del albarán de devolución 
-      dentro de la caja que pasaremos a recoger. Puedes descargarlo desde el e-mail 
-      de confirmación de tu devolución o durante el proceso a través 
-      de la web.</p>
-    <p>Abono: Una vez recibamos la devolución en nuestros almacenes procederemos 
-      a abonarte el importe correspondiente. En 48 horas verás reflejado 
-      el ingreso en el extracto de movimientos de tu tarjeta de crédito 
-      o de tu cuenta bancaria si pagaste con tarjeta de débito.</p>
-    <p></p>
-    <p class="t3">Seguridad</p>
+  <p>Puedes devolver un producto o pedido que por algún motivo no satisface 
+  tus expectativas.</p>
+  <p>Plazo de tramitación: Dispones de 10 días hábiles 
+    para gestionar la devolución de un producto o pedido desde que su 
+  estado es Entregado en Mi Cuenta.</p>
+  <p>Estado del pedido: Desde que te llega hasta que aparece en la web como 
+    Entregado pueden pasar hasta 48 horas, puesto que es el tiempo que transcurre 
+    desde que el operador logístico realiza la entrega hasta que nos 
+    lo comunica y lo actualizamos en nuestra base de datos. Así, si tu 
+    pedido no aparece en la lista del apartado Devoluciones, te aconsejamos 
+  que lo vuelvas a intentar pasado este plazo.</p>
+  <p>Condiciones del paquete: El producto debe estar en perfecto estado, con 
+    el embalaje y etiquetado original y en la misma caja o sobre que te hemos 
+    enviado, o en su defecto en algún formato similar que garantice la 
+  devolución en perfecto estado.</p>
+  <p>Albarán: Debes incluir una copia del albarán de devolución 
+    dentro de la caja que pasaremos a recoger. Puedes descargarlo desde el e-mail 
+    de confirmación de tu devolución o durante el proceso a través 
+  de la web.</p>
+  <p>Abono: Una vez recibamos la devolución en nuestros almacenes procederemos 
+    a abonarte el importe correspondiente. En 48 horas verás reflejado 
+    el ingreso en el extracto de movimientos de tu tarjeta de crédito 
+  o de tu cuenta bancaria si pagaste con tarjeta de débito.</p>
+  <p></p>
+  <h3 class="t3">Seguridad</h3>
 
-    <p>Tus datos se transmiten cifrados a través de una plataforma de pago 
-      totalmente segura.</p>
+  <p>Tus datos se transmiten cifrados a través de una plataforma de pago 
+  totalmente segura.</p>
 
-  <p class="t3">Privacidad</p>
+  <h3 class="t3">Privacidad</h3>
 
-    <p>Los Socios y Usuarios se comprometen a navegar por la página web y 
-      a utilizar el contenido de buena fe.</p>
-    <p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 
-      Protección de Datos de Carácter Personal, le informamos de 
-      que la cumplimentación de cualquier formulario existente en Sitio 
-      Web www.laaceitera.com o la remisión de un correo electrónico 
-      a cualquiera de nuestros buzones implica la aceptación de esta política 
-      de privacidad, así como la autorización a La Aceitera para que 
-      trate los datos personales que nos facilite.</p>
-    <p>Los datos de los Socios serán utilizados para el envío a 
-      través de email de las ventas que realice La Aceitera y para la entrega 
-      de los compras.</p>
-    <p>Por la mera visita a la web, los Usuarios no facilitan información 
-      personal alguna ni queda obligado a facilitarla.</p>
-    <p>El ordenador donde está alojada la web utiliza cookies para mejorar 
-      el servicio prestado por La Aceitera. Estas cookies se instalan automáticamente 
-      en el ordenador empleado por los Socios y Usuarios pero no almacenan ningún 
-      tipo de información relativa a éstos.</p>
-    <p>La Aceitera se compromete a guardar la máxima reserva y confidencialidad 
-      sobre la información que le sea facilitada y a utilizarla únicamente 
-      para los fines indicados.</p>
-    <p>La Aceitera presume que los datos han sido introducidos por su titular o por 
-      persona autorizada por éste, así como que son correctos y 
-      exactos.</p>
-    <p>Corresponde a los Socios la actualización de sus propios datos. 
-      En cualquier momento, el Socio tendrá el derecho de acceso, rectificación, 
-      cancelación y oposición a todos sus datos personales incluidos 
-      en los distintos formularios de alta. Para ejercitar esta facultad el Socio 
-      deberá acceder a www.laaceitera.com, al apartado "Mi Cuenta". 
-      Por lo tanto, el Socio es responsable de la veracidad de los datos y La 
-      Aceitera no será responsable de su inexactitud de los datos personales 
-      de los Socios.</p>
-    <p>Conforme a la legislación vigente en materia de protección 
-      de datos, La Aceitera ha adoptado los niveles de seguridad adecuados a los 
-      datos facilitados por los Socios y, además, ha instalado todos los 
-      medios y medidas a su alcance para evitar la pérdida, mal uso, alteración, 
-      acceso no autorizado y extracción de los mismos.<br>
-    </p>
-    <p class="t3">
+  <p>Los Socios y Usuarios se comprometen a navegar por la página web y 
+  a utilizar el contenido de buena fe.</p>
+  <p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 
+    Protección de Datos de Carácter Personal, le informamos de 
+    que la cumplimentación de cualquier formulario existente en Sitio 
+    Web www.laaceitera.com o la remisión de un correo electrónico 
+    a cualquiera de nuestros buzones implica la aceptación de esta política 
+    de privacidad, así como la autorización a La Aceitera para que 
+  trate los datos personales que nos facilite.</p>
+  <p>Los datos de los Socios serán utilizados para el envío a 
+    través de email de las ventas que realice La Aceitera y para la entrega 
+  de los compras.</p>
+  <p>Por la mera visita a la web, los Usuarios no facilitan información 
+  personal alguna ni queda obligado a facilitarla.</p>
+  <p>El ordenador donde está alojada la web utiliza cookies para mejorar 
+    el servicio prestado por La Aceitera. Estas cookies se instalan automáticamente 
+    en el ordenador empleado por los Socios y Usuarios pero no almacenan ningún 
+  tipo de información relativa a éstos.</p>
+  <p>La Aceitera se compromete a guardar la máxima reserva y confidencialidad 
+    sobre la información que le sea facilitada y a utilizarla únicamente 
+  para los fines indicados.</p>
+  <p>La Aceitera presume que los datos han sido introducidos por su titular o por 
+    persona autorizada por éste, así como que son correctos y 
+  exactos.</p>
+  <p>Corresponde a los Socios la actualización de sus propios datos. 
+    En cualquier momento, el Socio tendrá el derecho de acceso, rectificación, 
+    cancelación y oposición a todos sus datos personales incluidos 
+    en los distintos formularios de alta. Para ejercitar esta facultad el Socio 
+    deberá acceder a www.laaceitera.com, al apartado "Mi Cuenta". 
+    Por lo tanto, el Socio es responsable de la veracidad de los datos y La 
+    Aceitera no será responsable de su inexactitud de los datos personales 
+  de los Socios.</p>
+  <p>Conforme a la legislación vigente en materia de protección 
+    de datos, La Aceitera ha adoptado los niveles de seguridad adecuados a los 
+    datos facilitados por los Socios y, además, ha instalado todos los 
+    medios y medidas a su alcance para evitar la pérdida, mal uso, alteración, 
+    acceso no autorizado y extracción de los mismos.<br>
+  </p>
+  <h3 class="t3">
       <!--
 ************************************************
 *                 PIE de página                *
 ************************************************
 -->
-    </p>
-  </div>
+</p>
+</div>
 
 
-  <p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
+<p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
 
 </div>
 
@@ -251,7 +255,7 @@
 
 </body></html>
 <style type="text/css">
-   
+
   body {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 0.7em;
@@ -294,143 +298,143 @@
 /************************************************
 *                  CABECERA                    *
 ************************************************/
-  
-  
-  #logo{
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 1em 2em 1em 2em;
-    font-size: 1em;
-    }
-  
-  #la{
-    font-family: arial, helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-    color: #CC9900;
-  }
-  
-  #aceitera{
-    font-family: arial, helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-    color: #000;
-  }
-  
-  #lema{
-    font-family: arial, helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    font-style: italic;
-    color: #999;
-  } 
-  
-  
+
+
+#logo{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1em 2em 1em 2em;
+  font-size: 1em;
+}
+
+#la{
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #CC9900;
+}
+
+#aceitera{
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #000;
+}
+
+#lema{
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #999;
+} 
+
+
 /************************************************
 *            CESTA de la compra                *
 ************************************************/
-  
-  
-  #tabla_compra {
-    width: 60em;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 1em;
-  }
-  
-  #tabla_compra td{
-    padding: 0.5em;
-  }
-  
-  #conceptos td{
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-  }
-  
-  #total td{
-    padding-top: 0.5em;
-    border-top: 1px solid #ccc;
-  }
-  
-  #info_en{
-    font-size: 0.9em;
-    text-align: right;
-  }
+
+
+#tabla_compra {
+  width: 60em;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 1em;
+}
+
+#tabla_compra td{
+  padding: 0.5em;
+}
+
+#conceptos td{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+#total td{
+  padding-top: 0.5em;
+  border-top: 1px solid #ccc;
+}
+
+#info_en{
+  font-size: 0.9em;
+  text-align: right;
+}
 
 
 /************************************************
 *       Datos de facturación (formulario)      *
 ************************************************/ 
-  
-  
-  .info{
-    color:  #000; 
-    background-color: #EEF6FF;
-    border: 1px solid #0B639A;
-    padding: 0.5em;
-    margin: 0em 0.5em 0em 0.5em;
-  }
-  
-  .i{
-    color: #fff;
-    background-color: #039;   
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 0.1em 0.6em 0.1em 0.6em;
-    margin-right: 0.6em;
-  }
-  
-  #datos_personales{
-    float:left; 
-    width: 30em;  
-  }
-  
-  #datos_envio{
-    float: left;      
-  }
-  
-  #observaciones{ 
-    clear: both; 
-    padding-top: 2em;
-  }
-  
-  .obligatorio{
-    color: #c00;
-  }
-  
-  .campo_form{
-    margin-top: 0.5em;
-  }
-  
-  .campo_form label{
-    padding-left: 1em;
-    padding-right: 1em;
-    display: block;
-    width: 10em;
-    float: left;
-    text-align: right;
-  }
-  
-  #submit{
-    text-align: right;
-  }
+
+
+.info{
+  color:  #000; 
+  background-color: #EEF6FF;
+  border: 1px solid #0B639A;
+  padding: 0.5em;
+  margin: 0em 0.5em 0em 0.5em;
+}
+
+.i{
+  color: #fff;
+  background-color: #039;   
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.1em 0.6em 0.1em 0.6em;
+  margin-right: 0.6em;
+}
+
+#datos_personales{
+  float:left; 
+  width: 30em;  
+}
+
+#datos_envio{
+  float: left;      
+}
+
+#observaciones{ 
+  clear: both; 
+  padding-top: 2em;
+}
+
+.obligatorio{
+  color: #c00;
+}
+
+.campo_form{
+  margin-top: 0.5em;
+}
+
+.campo_form label{
+  padding-left: 1em;
+  padding-right: 1em;
+  display: block;
+  width: 10em;
+  float: left;
+  text-align: right;
+}
+
+#submit{
+  text-align: right;
+}
 
 /************************************************
 *          Garantías y pie de página           *
 ************************************************/
 
 
-  #garantias{
-    text-align: justify;
-  } 
+#garantias{
+  text-align: justify;
+} 
 
-  .lista{
-    padding-left: 2em;
-  } 
-  
-  #pie{
-    border-top: 3px solid #ccc;
-    padding: 1em;
-    text-align: center;
-  }
+.lista{
+  padding-left: 2em;
+} 
+
+#pie{
+  border-top: 3px solid #ccc;
+  padding: 1em;
+  text-align: center;
+}
 
 </style>
